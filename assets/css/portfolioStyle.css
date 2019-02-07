@@ -1,0 +1,14 @@
+.body{
+    font-family: 'Poppins', sans-serif;
+    background: #e4e4e4;
+}
+
+.navbar{
+    background: #202020;
+    font: white;
+}
+
+.jumbotron{
+    background: none;
+    text-align: center;
+}
