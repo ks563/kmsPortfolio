@@ -1,10 +1,10 @@
 (function ($) {
 	"use strict";
 
-	// $(window).on('load', function() {
-	//     $(".preloader").fadeOut("slow", function() {
-	//         $(".preloader-left").addClass("slide-left");
-	//     });
+	$(window).on('load', function() {
+	    $(".preloader").fadeOut("fast", function() {
+	        $(".preloader-left").addClass("slide-left");
+	    });
 
 	$('#lionhero').owlCarousel({
 		animateOut: 'fadeOut',
