@@ -79,7 +79,7 @@ $('#element').typed({
 $(".player").mb_YTPlayer({
 	containment: '#video-wrapper',
 	mute: true,
-	showControls: false,
+	showontrols: false,
 	quality: 'default',
 	startAt: 5
 });
@@ -87,9 +87,9 @@ $(".player").mb_YTPlayer({
 //Portfolio Modal
 $(document).on('click', '.open-project', function () {
 	var projectUrl = $(this).attr("href");
-	$('.inline-menu-container').removeClass('showx');
-	$('.sidebar-menu').addClass('hidex');
-	$('.content-blocks.pop').addClass('showx');
+	$('.inline-menu-container').removeClass('show');
+	$('.sidebar-menu').addClass('hide');
+	$('.content-blocks.pop').addClass('show');
 	$('.content-blocks.pop section').load(projectUrl + ' .load-data > *');
 	return false;
 });
@@ -97,9 +97,9 @@ $(document).on('click', '.open-project', function () {
 //Blog post Modal
 $('.open-post').on('click', function () {
 	var postUrl = $(this).attr("href");
-	$('.inline-menu-container').removeClass('showx');
-	$('.sidebar-menu').addClass('hidex');
-	$('.content-blocks.pop').addClass('showx');
+	$('.inline-menu-container').removeClass('show');
+	$('.sidebar-menu').addClass('hide');
+	$('.content-blocks.pop').addClass('show');
 	$('.content-blocks.pop section').load(postUrl);
 	return false;
 });
@@ -108,35 +108,35 @@ $('.open-post').on('click', function () {
 $('.menu-block, .menu-item').on('click', function () {
 	$('.name-block').addClass('reverse');
 	$('.name-block-container').addClass('reverse');
-	$('.menu-blocks').addClass('hidex');
-	$('.inline-menu-container').addClass('showx');
+	$('.menu-blocks').addClass('hide');
+	$('.inline-menu-container').addClass('show');
 	$('.inline-menu-container.style2').addClass('dark');
 });
 //On Click Open About/Resume Block
 $('.about-block, .menu-item.about').on('click', function () {
-	$('.content-blocks').removeClass('showx');
-	$('.content-blocks.about').addClass('showx');
+	$('.content-blocks').removeClass('show');
+	$('.content-blocks.about').addClass('show');
 	$('.menu-item').removeClass('active');
 	$('.menu-item.about').addClass('active');
 });
 //On Click Open Portfolio Block
 $('.portfolio-block, .menu-item.portfolio').on('click', function () {
-	$('.content-blocks').removeClass('showx');
-	$('.content-blocks.portfolio').addClass('showx');
+	$('.content-blocks').removeClass('show');
+	$('.content-blocks.portfolio').addClass('show');
 	$('.menu-item').removeClass('active');
 	$('.menu-item.portfolio').addClass('active');
 });
 //On Click Open Blog Block
 $('.blog-block, .menu-item.blog').on('click', function () {
-	$('.content-blocks').removeClass('showx');
-	$('.content-blocks.blog').addClass('showx');
+	$('.content-blocks').removeClass('show');
+	$('.content-blocks.blog').addClass('show');
 	$('.menu-item').removeClass('active');
 	$('.menu-item.blog').addClass('active');
 });
 //On Click Open Contact Block
 $('.contact-block, .menu-item.contact').on('click', function () {
-	$('.content-blocks').removeClass('showx');
-	$('.content-blocks.contact').addClass('showx');
+	$('.content-blocks').removeClass('show');
+	$('.content-blocks.contact').addClass('show');
 	$('.menu-item').removeClass('active');
 	$('.menu-item.contact').addClass('active');
 });
@@ -145,16 +145,16 @@ $('.contact-block, .menu-item.contact').on('click', function () {
 $('#close').on('click', function () {
 	$('.name-block').removeClass('reverse');
 	$('.name-block-container').removeClass('reverse');
-	$('.content-blocks').removeClass('showx');
-	$('.menu-blocks').removeClass('hidex');
-	$('.inline-menu-container').removeClass('showx');
+	$('.content-blocks').removeClass('show');
+	$('.menu-blocks').removeClass('hide');
+	$('.inline-menu-container').removeClass('show');
 	$('.menu-item').removeClass('active');
 });
 //On Click Close Blog Post And Project Details
 $('#close-pop').on('click', function () {
-	$('.content-blocks.pop').removeClass('showx');
-	$('.sidebar-menu').removeClass('hidex');
-	$('.inline-menu-container').addClass('showx');
+	$('.content-blocks.pop').removeClass('show');
+	$('.sidebar-menu').removeClass('hide');
+	$('.inline-menu-container').addClass('show');
 	$('.content-blocks.pop section').empty();
 });
 
@@ -164,7 +164,7 @@ $('.menu-block, .menu-item, #close').on('click', function () {
 
 //Function for 'Index-Menu2.html'
 $('#home').on('click', function () {
-	$('.content-blocks').removeClass('showx');
+	$('.content-blocks').removeClass('show');
 	$('.menu-item').removeClass('active');
 	$(this).addClass('active');
 	$('.inline-menu-container.style2').removeClass('dark');
