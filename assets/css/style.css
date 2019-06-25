@@ -379,7 +379,7 @@ a:not([href]):not([tabindex]) {
 }
 
 .home.img-bg {
-    background: url(../images/IMG_0367\ 2.JPG);
+    background-color:#132214;
     background-size: cover;
 }
 
@@ -573,9 +573,9 @@ a:not([href]):not([tabindex]) {
     transition: all 0.5s;
 }
 
-.menu-blocks.hidex {
+/* .menu-blocks.hidex {
     z-index: -999;
-}
+} */
 
 .menu-blocks.showx {
     z-index: 999;
